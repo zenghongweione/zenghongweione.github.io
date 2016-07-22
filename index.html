@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>时钟</title>
+    <style>
+        main{
+            width: 600px;
+            height: 600px;
+            border: 1px solid black;
+            margin: 30px auto;
+            border-radius: 50%;
+            position: relative;
+        }
+        #spint{
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            background-color: black;
+            border-radius: 50%;
+            position: absolute;
+            top: 290px;
+            left: 290px;
+            z-index: 100;
+        }
+        div{
+            width: 600px;
+            height: 20px;
+            /*background-color: red;*/
+            position: absolute;
+            top: 290px;
+        
+           
+        }
+        #seconds {
+           /*background-color: red;*/
+            /*transform: rotate(30deg);*/
+            animation: shijian 60s linear infinite;
+        }
+       #seconds section{
+            width: 350px;
+            height: 6px;
+            border-radius: 5px;
+            background-color: navy;
+            z-index: 99;
+            margin-top: 7px;
+        }
+        #minites{
+            /*background-color: red;*/
+            /*transform: rotate(60deg);*/
+            animation: shijian 3600s infinite linear;
+        }
+        #minites section{
+            width: 310px;
+            height: 10px;
+            position: relative;
+            left: 35px;
+            border-radius: 5px;
+            background-color: hotpink;
+            margin-top: 5px;
+        }
+        #hours{
+            /*background-color: red;*/
+            animation: shijian 43200s infinite linear;
+        }
+        #hours section{
+            width: 280px;
+            height: 14px;
+            border-radius: 50%;
+            background-color: green;
+            margin-top: 3px;
+            position: relative;
+            left: 60px;
+        }
+        @keyframes shijian{
+            to{
+               transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <span id="spint"></span>
+        <div id="seconds">
+            <section></section>
+        </div>
+        <div id="minites">
+            <section></section>
+        </div>
+        <div id="hours">
+            <section></section>
+        </div>
+    </main>
+    <!--用js获取时间-->
+    <script>
+        var time = new Date();
+        // 分别获取时分秒
+        var hour = time.getHours();
+        var minite = time.getMinutes();
+        var second = time.getSeconds();
+
+
+
+
+
+        minutes = 15*60*-1 + minutes *60*-1;
+        seconds =-15 seconds * -1;
+        // 获取文档节点,即分别获取文档中三个标签
+        var miao = document.getElementById('seconds');
+        var fen = document.getElementById('minutes');
+         var shi = document.getElementById('hour');
+         maio.style.animationDelay = seconds + 's';
+    </script>
+</body>
+</html>
