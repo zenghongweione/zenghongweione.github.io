@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>购物车</title>
+    <meta http-equiv="x-ua-compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <script src="bootstrap/js/jquery.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="js/qie.js"></script>
+    <script src="jquery-3.0.0.js"></script>
+    <style>
+        html,body{
+            padding: 0;
+            margin: 0;
+
+        }
+        body{
+            background-color: #f0f2f5;
+        }
+        header{
+            font-size: 4.33vw;
+            padding-top: 4.16vw;
+            height: 12.22vw;
+            width: 100%;
+            background-color: #F7F7F7;
+            display: flex;
+            justify-content: space-between;
+        }
+        header img{
+            width: 10vw;
+            height: 100%;
+            margin-top: -1vw;
+        }
+        #nav{
+            display: none;
+            height: 20vw;
+        }
+        #yc{
+
+            background-color: #404042;
+            display: flex;
+            justify-content: space-around;
+        }
+        #yc img{
+            width: 25%;
+        }
+        #tou{
+            height: 9.44vw;
+            background-color: white;
+            text-align: center;
+            padding-top: 1.5vw;
+            font-size: 3.33vw;
+
+        }
+        #tead{
+            height: 15vw;
+            background-color: white;
+            padding:4vw 0vw 0vw 5vw;
+            margin-top: 1vw;
+            font-size: 3.33vw;
+        }
+        #tead img{
+            height: 3.33vw;
+        }
+        #jd{
+            margin-left: 30vw;
+        }
+        #tead span:nth-child(3){
+            margin-left: 0vw;
+        }
+        .dagou{
+            position: relative;
+            /*background-color: red;*/
+            height: 5vw;
+            width: 5vw;
+            display: inline-block;
+            top: 1.2vw;
+            border-radius: 50%;
+            border: 0.126vw solid #8d8e91;
+        }
+        .sec1{
+            height: 34.72vw;
+            background-color: white;
+            /*margin-top: 2vw;*/
+        }
+        .yg{
+            border: 0.126vw solid #8d8e91;
+
+            /*background-color: red;*/
+            height: 5vw;
+            width: 5vw;
+            display: inline-block;
+            border-radius: 50%;
+            position: relative;
+            left: 5vw;
+            top: 2.5vw;
+        }
+        .sec1 img{
+            width: 24.72vw;
+            height: 24.72vw;
+            position: relative;
+            left: 5vw;
+            /*top: 5vw;*/
+            border: 0.126vw solid #8d8e91;
+
+            /*margin: 3vw 0vw 5vw 0vw;*/
+        }
+        .sec1 span{
+            font-size: 3.33vw;
+
+        }
+        .duan{
+            width: 51.11vw;
+            /*background-color: red;*/
+            height: 83%;
+            position: relative;
+            left: 40vw;
+            top: -25vw;
+            font-size: 3.33vw;
+
+        }
+        .duan span:nth-child(2){
+            position: relative;
+            top: 7vw;
+            font-size: 2.77vw;
+            margin-left: -34vw;
+            color: #81838e;
+        }
+        .duan span:nth-child(3){
+            font-size: 4.5vw;
+            position: relative;
+            top: 13vw;
+            left: -34vw;
+            color: red;
+        }
+        .anniu{
+            border: 0.126vw solid #81838e;
+            position: relative;
+            height: 7vw;
+            width: 10;
+            top:8vw;
+            width: 30vw;
+            left: 20vw;
+            font-size: 4vw;
+        }
+        .anniu div{
+            /*border: 0.126vw solid #81838e;*/
+            width: 9vw;
+            height: 7vw;
+            /*background-color: red;*/
+            display: inline-block;
+            border-left: 0.126vw solid #81838e;
+            text-align: center;
+        }
+        .zh{
+             position: relative;
+            top: -25vw;
+            margin-left: 88vw;
+            font-size: 3.33vw;
+        }
+        .man{
+            background-color: #f8f8f8;
+            height: 9.16vw;
+            padding: 2vw 0vw 0vw 5vw;
+        }
+        .man img{
+            margin-right: 2vw;
+        }
+        .fh{
+            margin-left: 37vw;
+        }
+        #tuijian{
+            margin-top: 5vw;
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 5vw;
+        }
+        #tuijian img{
+            position: relative;
+            top: 1vw;
+            left: 1vw;
+            width: 8vw;
+            height:8vw;
+        }
+        #tuijian span{
+            position: relative;
+            top:2vw;
+            right: 0vw;
+        }
+        #tuijian div {
+            margin-top: 5vw;
+            height: 0.126vw;
+            width: 30vw;
+            border-top: 0.126vw solid black;
+        }
+        .nnn img{
+            width: 50%;
+        }
+        footer{
+            margin-bottom: 20vw;
+        }
+        #jie{
+            height: 15.88vw;
+            background-color: white;
+            display: flex;
+            justify-content: inherit;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        #shang{
+            height: 100%;
+            width: 20%;
+            font-size: 3.05vw;
+            padding-top: 3vw;
+        }
+        #shang span{
+            margin: 10vw 0vw 0vw 7vw;
+        }
+        #xia{
+            padding-top: 3vw;
+
+            height: 100%;
+            width: 50%;
+            /*background-color: blue;*/
+        }
+        #jiesuang{
+            width: 30%;
+            padding-top: 4vw;
+            padding-left: 5vw;
+            background-color: red;
+            font-size: 5.05vw;
+
+        }
+        .aaa{
+            background-image: url("购物车/6.png");
+        }
+        .m{
+        	font-size: 3.33vw;
+        }
+        .img3{
+        	height: 5vw;
+        	width: 7vw;
+        }
+        .m1{
+        	font-size: 4vw;
+        }
+    </style>
+</head>
+<body>
+<header id="1">
+    <img src="分类/1.png" alt="ff" onclick="location.href ='主页.html'"/>
+    <span>我的京东</span>
+    <img src="分类/2.png" alt="ff" id="aa"/>
+</header>
+
+<div>
+    <nav id="nav">
+        <div id="yc">
+            <img src="登录/4.png" alt="ff" onclick="location.href ='主页.html'"/>
+            <img src="登录/3.png" alt="ff" onclick="location.href ='分类.html'"/>
+            <img src="购物车/1.png" alt="ff" onclick="location.href ='购物车.html'"/>
+            <img src="购物车/2.png" alt="ff" onclick="location.href ='登录.html'"/>
+        </div>
+    </nav>
+</div>
+
+<div id="tou">
+    <img src="购物车/3.png" alt="ff"><span>您正在安全购物环境中,请放心购物</span>
+</div>
+
+<action>
+    <div id="tead">
+       <div class="dagou  "></div><img src="购物车/pic_002.png" alt="ff"><span>京东自营</span><span id="jd">您享受满99元免运费服务</span>
+    </div>
+        <section class="sec1">
+
+                <div class="yg"></div>
+                <img src="购物车/pic_003.jpg" alt="ff" onclick="location.href ='商品详情.html'">
+
+            <div class="duan" >
+                <span>西部数据(WD)Elements新元素系列2.5英寸USB3.0移动</span>
+                <span>颜色:经典款(黑色)<b>版本:1TB</b></span>
+                <span>&yen;419.00</span>
+                <div class="anniu">
+                    <div class="a1">-</div>
+                    <div class="a2">1</div>
+                    <div class="a3">+</div>
+                </div>
+            </div>
+            <div class="zh">编辑</div>
+    </section>
+    <div class="man">
+        <img class="img3" src="购物车/4.png" alt="ff"><span class="m">满299.00元,即享优惠</span><span class="fh">&gt;</span>
+    </div>
+
+    <section class="sec1">
+
+        <div class="yg"></div>
+        <img src="购物车/pic_004.jpg" alt="ff" onclick="location.href ='商品详情.html'">
+
+        <div class="duan" onclick="location.href ='商品详情.html'">
+            <span>西部数据(WD)Elements新元素系列2.5英寸USB3.0移动</span>
+            <span>颜色:经典款(黑色)<b>版本:1TB</b></span>
+            <span>&yen;126.00</span>
+            <div class="anniu">
+                <div class="a1">-</div>
+                <div class="a2">1</div>
+                <div class="a3">+</div>
+            </div>
+        </div>
+        <div class="zh">编辑</div>
+    </section>
+
+    <section class="sec1">
+
+        <div class="yg"></div>
+        <img src="购物车/pic_006.jpg" alt="ff" onclick="location.href ='商品详情.html'">
+
+        <div class="duan" >
+            <span>西部数据(WD)Elements新元素系列2.5英寸USB3.0移动</span>
+            <span>颜色:经典款(黑色)<b>版本:1TB</b></span>
+            <span>&yen;126.00</span>
+            <div class="anniu">
+                <div class="a1">-</div>
+                <div class="a2">1</div>
+                <div class="a3">+</div>
+            </div>
+        </div>
+        <div class="zh">编辑</div>
+    </section>
+
+    <section class="sec1">
+
+        <div class="yg"></div>
+        <img src="购物车/pic_008.jpg" alt="ff" onclick="location.href ='商品详情.html'">
+
+        <div class="duan" >
+            <span class="m">西部数据(WD)Elements新元素系列2.5英寸USB3.0移动</span>
+            <span>颜色:经典款(黑色)<b>版本:1TB</b></span>
+            <span>&yen;126.00</span>
+            <div class="anniu">
+                <div class="a1">-</div>
+                <div class="a2">1</div>
+                <div class="a3">+</div>
+            </div>
+        </div>
+        <div class="zh">编辑</div>
+    </section>
+
+</action>
+
+<div id="tuijian">
+    <div></div>
+    <img src="登录/pic_035.png" alt="ff" onclick="location.href ='商品详情.html'">
+    <span class="m1">为你推荐</span>
+    <div></div>
+</div>
+
+<footer>
+    <div class="nnn" onclick="location.href ='商品详情.html'">
+        <img src="登录/12.png" alt="ff"><img src="登录/13.png" alt="ff">
+    </div>
+    <div class="nnn" onclick="location.href ='商品详情.html'">
+        <img src="登录/14.png" alt="ff"><img src="登录/15.png" alt="ff">
+    </div>
+</footer>
+
+<div id="jie">
+    <div id="shang">
+    <div class="yg" id="zzzz"></div><span>全选</span>
+    </div>
+    <div id="xia">
+        <div class="m1">合计:¥2544.00</div>
+        <div class="m1">总额:¥2544.00 立减:¥0.00</div>
+    </div>
+
+<div id='jiesuang'>
+    去结算(3)
+</div>
+</div>
+
+</body>
+</html>
+<script>
+    $(function(){
+          $('.yg').click(function(){
+              $(this).toggleClass('aaa');
+          });
+
+
+    $('#zzzz').click(function(){
+        $('.yg').toggleClass('aaa');
+        $(this).toggleClass('aaa');
+
+    });
+$('.a3').click(function(){
+    var n = $(this).prev().text();
+    var num = parseInt(n)+1;
+//    if(num == 0){return;}
+    $(this).prev().text(num);
+});
+
+        $('.a1').click(function(){
+            var n =$(this).next().text();
+            var num = parseInt(n)-1;
+//            if(num ==0){return}
+            $(this).next().text(num);
+        });
+
+});
+//          })
+//    });
+
+//    $('.aaa').click(function(){
+//        $('.aaa').css('background-image','url(购物车/6.png)')
+//    })
+
+//     $('.yg').click(function(){
+//    $(this).css('background-image','url("购物车/6.png")');
+//    })
+//    $('.yg').click(function(){
+//        $(this).css('','');
+//    })
+
+</script>

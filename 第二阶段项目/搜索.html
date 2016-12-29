@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>搜索</title>
+		<meta http-equiv="x-ua-compatible" content="IE=edge">
+    	<meta name="viewport" content="width=device-width,initial-scale=1">
+    	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    	<script src="bootstrap/js/jquery.js"></script>
+    	<script src="bootstrap/js/bootstrap.min.js"></script>
+    	<!--<script src="js/yc.js"></script>-->
+    	<script src="jquery-3.0.0.js"></script>
+    	<style type="text/css">
+    		header{
+				font-size: 4.33vw;
+				padding-top: 4.16vw;
+				height: 12.22vw;
+    			width: 100%;
+    			background-color: #f3f5f7;
+    			display: flex;
+    			justify-content: space-between;
+    		}
+			header img{
+				width: 10vw;
+				height: 100%;
+				margin-top: -1vw;
+			}
+			#inp1{
+    			height: 8vw;
+    			width: 80vw;
+    			margin-top: -1vw;
+    		}
+    		.ss1{
+    			text-align: center;
+    			display: flex;
+    			justify-content: space-around;
+    		}
+    		.ss1 div{
+    			margin-top: 3vw;
+    			border-radius: 10px;
+    			width: 27vw;
+    			height: 6vw;
+    			border: 0.125vw solid black;
+    		}
+    		main{
+    			/*display: none;*/
+    		}
+    		#nav{
+    			display: none;
+    			
+    		}
+    		#yc{
+    			
+    			background-color: #404042;
+    			display: flex;
+    			justify-content: space-around;
+    		}
+    		#img2{
+    			margin-right: 1vw;
+    		}
+    	</style>
+	</head>
+	<body>
+		<header>
+				<img src="分类/3.png" alt="ff" id="img1" onclick="location.href ='主页.html'"/>
+				<input type="text" name="" id="inp1" placeholder="不买难受,买不到想哭"/>
+				<img src="分类/84.png" alt="ff" id="img2"/>
+			</header>
+			<nav id="nav">
+				<div id="yc">
+				<img src="分类/4.png" alt="ff" />
+				<img src="分类/5.png" alt="ff" />
+				<img src="分类/6.png" alt="ff" />
+				<img src="分类/7.png" alt="ff" />
+				</div>
+			</nav>
+		<main id='main'>
+			<section>
+				<span>热门搜索</span>
+				<div class="ss1">
+					<div class="ss">儿童女装</div>
+					<div class="ss">鱼子酱</div>
+					<div class="ss">机器人</div>
+				</div>
+				<div class="ss1">
+					<div class="ss">时尚手机</div>
+					<div class="ss">男装</div>
+					<div class="ss">鞋子</div>
+				</div>
+			</section>
+		</main>
+	</body>
+</html>
+<script type="text/javascript">
+	$(function(){
+		$('.ss').each(function(index){
+			$(this).click(function(){
+				$('#inp1').val($('.ss').eq(index).text())
+			})
+		})
+	});
+</script>

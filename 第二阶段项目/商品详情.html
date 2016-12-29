@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>商品详情</title>
+    <meta http-equiv="x-ua-compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <script src="bootstrap/js/jquery.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <!--<script src="js/qie.js"></script>-->
+    <script src="jquery-3.0.0.js"></script>
+    <style>
+        html,body{
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            background-color: #f0f2f5;
+        }
+        header{
+            font-size: 4.33vw;
+            padding-top: 4.16vw;
+            height: 12.22vw;
+            width: 100%;
+            background-color: #F7F7F7;
+            display: flex;
+            justify-content: space-between;
+        }
+        header img{
+            width: 10vw;
+            height: 100%;
+            margin-top: -1vw;
+        }
+        #head1{
+            border-bottom: 0.126vw solid #e3e3e5;
+        }
+        #nav{
+            display: none;
+            height: 20vw;
+        }
+        #yc{
+
+            background-color: #404042;
+            display: flex;
+            justify-content: space-around;
+        }
+        #yc img{
+            width: 25%;
+        }
+        .item img{
+            height: 84.61vw;
+            width: 100%;
+        }
+        #bod1 img{
+            height:89vw;
+        }
+        #nav1{
+            height: 24.72vw;
+            background-color: white;
+            font-size: 3.97vw;
+        }
+        #hong{
+            background-color: red;
+            color: white;
+        }
+        #ip{
+            padding: 2.33vw  3.77vw 0vw 2.77vw;
+        }
+        #qian span:first-child{
+            font-size: 4.72vw;
+            color: red;
+            font-weight:bold;
+
+        }
+        #qian span:last-child{
+            display: inline-block;
+            height: 7.22vw;
+            width: 17.5vw;
+            font-size: 3.05vw;
+            border: 0.126vw solid #e3e3e5;
+            text-align: center;
+            margin-left: 60vw;
+            padding-top: 1.5vw;
+
+        }
+        #cx{
+            padding-top: 4.41vw;
+            background-color: white;
+            height: 20vw;
+            margin: 2.5vw 0vw 2.5vw 0vw;
+            font-size: 3.88vw;
+        }
+        #cx1{
+            margin-left: 2.77vw;
+            font-size: 3.88vw;
+
+        }
+        #cx1 span:nth-child(2){
+            margin: 0vw 1vw 0vw 1vw;
+            text-align: center;
+            display: inline-block;
+            font-size: 2.5vw;
+            color: red;
+            border: 0.126vw solid red;
+            height: 3.88vw;
+            width: 9.44vw;
+        }
+        #cx2{
+            margin-left: 10.42vw;
+        }
+        #cx2 span:nth-child(1){
+            font-size: 2.5vw;
+            color: red;
+            border: 0.126vw solid red;
+            height: 3.88vw;
+            width: 12.22vw;
+            margin: 0vw 1vw 0vw 1vw;
+            text-align: center;
+            display: inline-block;
+        }
+        #cx2 span:nth-child(3){
+            color: red;
+        }
+        #yx{
+            padding-top: 0vw;
+            background-color: white;
+            height: 55.55vw;
+            /*border: 0.126vw solid red;*/
+        }
+        .yx1{
+            color: #bfbfbf;
+            padding:0vw 2.22vw 3.61vw 2.56vw;
+            width: 12.56vw;
+            display: inline-block;
+
+        }
+        #yx div{
+            margin-top: 1vw;
+            font-size: 3.77vw;
+        }
+       .yx2 span{
+           display: inline-block;
+           height: 7.77vw;
+           width: 16.11vw;
+           border: 0.126vw solid #bfbfbf;
+           margin-right: 3.77vw;
+           text-align: center;
+       }
+        #yx3{
+            position: relative;
+            top:-4vw;
+        }
+        .anniu{
+            border: 0.126vw solid #81838e;
+            /*position: relative;*/
+            /*top:8vw;*/
+            width: 30vw;
+            /*left: 27vw;*/
+            display: inline-block;
+            margin-bottom: 4vw;
+        }
+        .anniu div{
+            /*border: 0.126vw solid #81838e;*/
+            width: 9vw;
+            height: 5vw;
+            font-size: 2.77vw;
+            /*background-color: red;*/
+            display: inline-block;
+            border-left: 0.126vw solid #81838e;
+            text-align: center;
+        }
+        #yb{
+            background-color: white;
+            height: 12.22vw;
+            font-size: 3.33vw;
+            color: #81838e;
+            margin-top: 0.526vw;
+            padding: 3vw 10vw 0vw 3vw;
+        }
+        #sz{
+            height: 49.77vw;
+            background-color: white;
+            margin-top: 2.5vw;
+            font-size: 3.33vw;
+        }
+        .sz1{
+            color: #81838e;
+            margin-left: 2.77vw;
+        }
+        .sz2{
+            margin-left: 12.22vw;
+        }
+        #sz3 img{
+          height: 4.44vw;
+            width: 18.83vw;
+        }
+      #sz div{
+          padding-top: 4.44vw;
+      }
+        #zmd{
+            height: 40vw;
+            background-color: white;
+            margin-top: 2.5vw;
+            font-size: 3.33vw;
+        }
+        #zmd1 {
+            height: 13.05vw;
+            /*border: 0.126vw solid red;*/
+            position: relative;
+        }
+        #zmd1 span:last-child{
+            position: absolute;
+            top: 6.5vw;
+            left: 27vw;
+            font-size: 2.77vw;
+            margin-top: 1vw;
+        }
+        #zmd img{
+            margin: 2vw 2vw 0vw 2vw;
+
+            height: 7.77vw;
+            width: 22.77vw;
+        }
+        #zmd2{
+            display: flex;
+            justify-content: space-around;
+            text-align: center;
+
+        }
+        .zmd3{
+            border-right: 0.126vw solid #D7D7D7;
+           padding-right: 8vw;
+        }
+        #zmd4{
+            display: flex;
+            font-size: 3.33vw;
+            margin-top: 3vw;
+            color: #686868;
+        }
+        #zmd4 div{
+            height: 9.44vw;
+            width: 45.83vw;
+            border: 0.126vw solid #D7D7D7;
+            text-align: center;
+            padding-top: 2.5vw;
+            border-radius: 2vw;
+            margin-left: 2.5vw;
+        }
+        #zmd4 img{
+            width: 3.61vw;
+            height: 3.61vw;
+            margin-top: -1.2vw;
+        }
+        .zmd5{
+            color: #D7D7D7;
+        }
+        #sec1{
+            /*display: none;*/
+        }
+        #head2{
+            display: flex;
+            justify-content: space-around;
+            padding-top: 2vw;
+            height: 11.11vw;
+            background-color: white;
+            border-bottom: 0.126vw solid #D7D7D7;
+        }
+        #head2 span{
+            font-size: 3.33vw;
+        }
+        #bod2{
+            padding-top: 3vw;
+            height: 100%;
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            height: 150vw;
+
+        }
+
+        #img1{
+            display: none;
+
+        }
+        #img2{
+            display: none;
+        }
+        #sec2{
+            display: none;
+        }
+        #sec3{
+            text-align: center;
+            display: none;
+        }
+       footer{
+       	margin-top: 3vw;
+       	position: fixed;
+       	bottom: 0;
+       	font-size: 4vw;
+       }
+        footer div{
+        	display: flex;
+        	height: 15.55vw;
+        	background-color: #FFFFFF;
+        }
+        footer div img{
+        	height: 11.66vw;
+        	width: 20.66%;
+            margin-left: 8.5vw;
+            margin-top: 3vw;
+        }
+        #huang{
+        	background-color: #FFB03F;
+        	color: white;
+        	width: 50%;
+        	
+        	margin-left: 21vw;
+        	align-items:center;
+        	justify-content:center;
+        }
+        #ma{
+        	background-color: #F23030;
+        	color: white;
+        	width: 50%;
+        	align-items:center;
+        	justify-content:center;
+        	
+        }
+     
+       
+    </style>
+</head>
+<body>
+
+<header id="1">
+    <img  src="分类/1.png" alt="ff" onclick="location.href ='购物车.html'"/>
+    <span class="c1">商品</span>
+    <span class="c1">详情</span>
+    <span class="c1">评价</span>
+    <img src="分类/2.png" alt="ff" id="aa" />
+</header>
+
+
+
+<nav id="nav">
+    <div id="yc">
+        <img src="登录/4.png" alt="ff" onclick="location.href ='主页.html'"/>
+        <img src="登录/3.png" alt="ff" onclick="location.href ='分类.html'"/>
+        <img src="登录/2.png" alt="ff" onclick="location.href ='购物车.html'"/>
+        <img src="登录/1.png" alt="ff" onclick="location.href ='登录.html'"/>
+    </div>
+</nav>
+
+<main>
+    <section id="sec1" class="a1">
+
+        <div id="head1">
+
+            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+
+                </ol>
+                <div class="carousel-inner" role="listbox" id="bod1">
+
+                    <div class="item active">
+                        <img src="商品详情/pic_004.jpg" alt="ff">
+                        <div class="carousel-caption">
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <img src="商品详情/pic_005.jpg" alt="ff">
+                        <div class="carousel-caption">
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <img src="商品详情/pic_006.jpg" alt="ff">
+                        <div class="carousel-caption">
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <img src="商品详情/pic_006.jpg" alt="ff">
+                        <div class="carousel-caption">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+        <div id="nav1">
+            <div id="ip">
+                <span><span id="hong">自营</span>Apple 6s(A1700) 16G 玫瑰金色 移动联通电信4G手机</span>
+            </div>
+            <div id="qian">
+                <span>¥3799.00</span><span id="jj">降价通知</span>
+            </div>
+        </div>
+
+        <div id="cx">
+            <div id="cx1"><span>促销</span><span>加价购</span><span>满3599.00另加15.00元或满3799.00元</span></div>
+            <div id="cx2"><span>优惠套餐</span><span>最高省</span><span>58.0元</span></div>
+        </div>
+
+        <div id="yx">
+            <div><span class="yx1">已选</span>玫瑰金&#x3000;公开版&#x3000;16G&#x3000;1件</div>
+            <div><span class="yx1">颜色</span><span class="yx2"><span>金色</span><span>银色</span><span>玫瑰金</span><span>深空灰</span></span></div>
+            <div ><span class="yx1">版本</span><span class="yx2"><span>公开版</span><span>移动4G</span></span></div>
+            <div><span class="yx1">选择版本</span><span class="yx2" id="yx3"><span>16G</span><span>64G</span><span>128G</span><span>128G</span></span></div>
+            <div>
+                <span class="yx1">数量</span>
+                <div class="anniu">
+                    <div class="a1">-</div>
+                    <div class="a2">1</div>
+                    <div class="a3">+</div>
+                </div>
+            </div>
+        </div>
+        <div id="yb">
+            <span>延保</span>
+        </div>
+        <div id="sz">
+            <div>
+                <span><span class="sz1">送至&#x3000;</span>北京&#x3000;朝阳区&#x3000;管庄</span>&#x3000;<img src="商品详情/1.png" alt="ff">
+            </div>
+            <div>
+                <span class="sz2">现货,11:10前完成下单,预计今天(10月28日)送达</span>
+            </div>
+            <div>
+                <span><span class="sz1">服务</span>&#x3000;由京东发货并提供售后服务</span>
+            </div>
+            <div id="sz3">
+                <img class="sz2" src="商品详情/2.png" alt="ff">&#x3000;&nbsp;<img src="商品详情/3.png" alt="ff">&#x3000;&nbsp;<img src="商品详情/4.png" alt="ff">
+            </div>
+            <div>
+                <span class="sz1">提示</span><span style="color: #6277ac">&#x3000;支持7天无理由退货</span>
+            </div>
+        </div>
+
+        <div id="zmd">
+              <div id="zmd1">
+                  <img src="商品详情/5.png" alt="ff"><span>京东Apple产品专营店</span><span>Apple电脑自营</span>
+              </div>
+         <div id="zmd2">
+
+             <div class="zmd3">
+                 <div>7777</div>
+                 <div class="zmd5">关注人数</div>
+             </div>
+
+             <div class="zmd3">
+                 <div>213</div>
+                 <div class="zmd5">全部商品</div>
+             </div>
+
+             <div>
+                 <div>29</div>
+                 <div class="zmd5">店铺动态</div>
+             </div>
+         </div>
+
+            <div id="zmd4">
+                <div><img src="商品详情/6.png" alt="ff">联系供应商</div>
+                <div><img src="商品详情/7.png" alt="ff">进入店铺</div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="sec2" class="a1">
+
+          <div id="head2">
+              <span class="c2">商品介绍</span><span class="c2">规格参数</span><span class="c2">包装售后</span>
+          </div>
+
+        <div>
+            <div id="bod2">
+                <img class="tu" id="img1" src="商品详情/8.png" alt="ff">
+                <img class="tu" id="img2" src="商品详情/9.png" alt="ff">
+                <img class="tu" id="img3" src="商品详情/10.png" alt="ff">
+            </div>
+        </div>
+
+    </section>
+
+    <section id="sec3" class="a1">
+            <span>没有评论</span>
+    </section>
+</main>
+
+<footer>
+	<div>
+		
+		<div id="inp4">
+		<img src="商品详情/11.png" alt="ff" />
+		<img src="商品详情/12.png" alt="ff" />
+		<img src="商品详情/13.png" alt="ff" onclick="location.href ='购物车.html'"/>
+		</div>
+		
+
+	<div id="huang" onclick="location.href ='购物车.html'">加入购物车</div>
+		<div id='ma'>立即购买</div>
+	
+
+		</div>
+	
+</footer>
+
+
+</body>
+</html>
+<script>
+    $('.c1').each(function(index){
+        $(this).click(function() {
+//            console.log(index);
+            $('section.a1').eq(index).css('display','block');
+            $('section.a1').eq(index).siblings().css('display','none');
+        })
+    });
+
+    $('.c2').each(function(index){
+        $(this).click(function(){
+           $('.tu').eq(index).css('display','block');
+            $('.tu').eq(index).siblings().css('display','none');
+        })
+    })
+
+
+        $('#aa').click(function(){
+            $('#nav').toggle();
+        });
+
+
+</script>

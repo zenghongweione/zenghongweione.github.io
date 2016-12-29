@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>主页</title>
+		<meta http-equiv="x-ua-compatible" content="IE=edge">
+    	<meta name="viewport" content="width=device-width,initial-scale=1">
+    	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    	<script src="bootstrap/js/jquery.js"></script>
+    	<script src="bootstrap/js/bootstrap.min.js"></script>
+    	<script src="js/jdxw.js"></script>
+    	<script src="js/djs.js"></script>
+    	<style type="text/css">
+    	html,body{
+    		margin: 0;
+    		padding: 0;
+    	}
+    		main{
+    			width: 100%;
+    		}
+    		header{
+				font-size: 3.33vw;
+				width: 100%;
+    		}
+		header img{
+			width: 10vw;
+			height: 100%;
+			margin-top: -1vw;
+		}
+    		nav{
+    			width: 100%;
+    		height: 10.73vw;
+    		position: fixed;
+    		top: 0;
+			z-index: 999999;
+			background-color: gray;
+			opacity: 0.5;
+			/*background-color: rgba(20,20,200,1);*/
+			
+    		}
+    		#img1{
+    		    width: 10.25vw;
+    		    position: absolute;
+    		    top: 1vw;
+    		    left: 1vw;
+    		}
+    		#inp1{
+    			margin-top: 1.5vw;
+    			padding-left: 3.75vw;
+    			height: 6.34vw;
+    			width: 70.5vw;
+    			border-radius: 6.25vw;
+    			position: absolute;
+    			left: 14.75vw;
+    			top: 1.375vw;
+    			background-image: url(主页/sou.png);
+    			background-size: 4.5vw;
+    			background-repeat: no-repeat;
+    		}
+    		#spa{
+    			font-size: 4.42vw;
+    			position: absolute;
+    			left: 88.5vw;
+    			top: 2.2vw;
+    			color: white;
+    			width: 10vw;
+    			
+    		}
+    		.item img{
+    			width: 100%;
+    		}
+    	#sec1{
+    		height: 40.5vw;
+    		width: 100%;
+    		background-color: #f3f3f3;
+    		
+    	}
+    	
+    	#fenlie1{
+    		height: 15.875vw;
+    		border-bottom: 1px solid black;
+    	}
+    	#fenlie1 img{
+    		margin-top: 3.125vw;
+    		margin-left: 7.125vw;
+    		width: 11vw;
+    	}
+    	#fenlie2{
+    		height: 15.875vw;
+    		border-bottom: 1px solid black;
+    		
+    	}
+    	#fenlie2 img{
+    		margin-left: 7.125vw;
+    		margin-top: 3.125vw;
+    		width: 11vw;
+    	}
+    	#fenlie3 img{
+    		width: 14vw;
+    		margin-bottom: 0.5vw;
+    	}
+    	#fenlie3{
+    		background-color: white;
+    		border-radius: 6.25vw;
+    		width: 90%;
+    		height: 7vw;
+    		margin-left: 4.375vw;
+    		padding-left: 2.5vw;
+    		
+    	}
+    	#js1{
+    		width: 70vw;
+    		height: 3.75vw;
+    		display: inline-block;
+    		margin-top: -0.175vw;
+    		
+    	}
+    	#djs{
+    		height: 7vw;
+    		/*background-color: red;*/
+    		margin-left: 3.3vw;
+    	}
+    	#djs span{
+    		text-align: center;
+    		display: inline-block;
+    		background-color: #000000;
+    		font-size: 3vw;
+    		width: 6vw;
+    		height: 5vw;
+    		color: white;
+    		
+    		    	}
+        #djs img{
+        	width: 20vw;
+        }
+        #djs4{
+        	font-size: 3vw;
+        	margin-left: 30vw;
+        	display: inline-block;
+        	color: black;
+        }
+        #ms{
+        	 display: flex;
+        	 justify-content:space-around;
+        }
+        #ms img{
+        	width: 30vw;
+        }
+        #u1{
+        	font-size: 4vw;
+        }
+        #img2{
+        	width: 100%;
+        }
+        #js{
+        	display: flex;
+        	justify-content:space-around;
+        }
+        #js img{
+        	width: 52.625vw;
+        }
+        #ash img:nth-child(1){
+        	width: 100%;
+        }
+        #ash img:nth-child(2){
+        	width: 20vw;
+        	position: relative;
+        	top: -9vw;
+        	left: 40vw;
+        }
+        #aaa img{
+        	width: 50%;
+        }
+        #bbb img{
+        	width: 23%;
+        }
+        #img3{
+        	width: 100%;
+        }
+        #img4{
+        	width: 20vw;
+        	position: relative;
+        	top: -9vw;
+        	left: 40vw;
+        }
+        #hpz img{
+        	width: 50%;
+        }
+        #lbt2{
+        	background-color: #f3f3f3;
+        	margin: 1vw 1vw 0vw 1vw;
+        }
+        #lbt3{
+        	background-color: #f3f3f3;
+        	margin: 1vw 3vw 0vw 1vw;
+        }
+        .da{
+        	width: 50%;
+        }
+        .xiao{
+        	width: 25%;
+        }
+        .ee{
+        	width: 25%;
+        }
+        .zh{
+        	width: 100%;
+        }
+        #foot{
+        	width: 100%;
+        	position: fixed;
+        	bottom:0;
+        	background-color: white;
+        }
+        #foot img{
+        	width: 18vw;
+        	margin-left: 5vw;
+        	
+        }
+        #ff{
+        	
+        	height: 30vw;
+        	width: 100%;
+        	background-color: #f8f8f8;
+        	border: 0.125vw solid #dbdbdb;
+        	m/*argin-bottom: 1vw;*/
+        	
+        }
+        #u2{
+        	margin-top: 5vw;
+        	margin-bottom: 5vw;
+        	/*border: 1px solid red;*/
+        	display: flex;
+        	justify-content: space-around;
+        	padding: 0;
+        	
+        	 list-style:none;  
+        	 
+        }
+        #u2 li{
+        	padding-right: 5vw;
+        	border-right: 0.125vw solid #DBDBDB;
+        }
+        #u2 li:nth-child(4){
+        	border-right: 0.125vw solid white;
+        	
+        }
+      #a1{
+        	 color: black;
+        }
+    	</style>
+	</head>
+	<body>
+		<main>
+			<header id="1">
+				<nav>
+					<img src="主页/下载.png" alt="ff" id="img1"/>
+					<input onclick="location.href ='搜索.html'" type="text" id="inp1" placeholder="山姆会员商店" />
+					<span onclick="location.href ='未登录页面.html'" id="spa">登录</span>
+				</nav>
+				<div id="lunbo">
+					
+				<div id="carousel-example-generic" class="carousel slide" data-ride="carousel" >
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="4"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="5"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="6"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="7"></li>
+    
+    
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+  	
+    <div class="item active">
+      <img src="主页/pic_001.jpg" alt="ff" onclick="location.href ='奶粉.html'">
+      <div class="carousel-caption">
+      </div>
+    </div>
+    
+    <div class="item">
+      <img src="主页/pic_002.jpg" alt="ff" onclick="location.href ='奶粉.html'">
+      <div class="carousel-caption">
+      </div>
+    </div>
+    
+    <div class="item">
+      <img src="主页/pic_003.jpg" alt="ff" onclick="location.href ='奶粉.html'">
+      <div class="carousel-caption">
+      </div>
+    </div>
+    
+    <div class="item">
+      <img src="主页/pic_004.jpg" alt="ff" onclick="location.href ='奶粉.html'">
+      <div class="carousel-caption">
+      </div>
+    </div>
+    
+    <div class="item">
+      <img src="主页/pic_005.jpg" alt="ff" onclick="location.href ='奶粉.html'">
+      <div class="carousel-caption">
+      </div>
+    </div>
+    
+    <div class="item">
+      <img src="主页/pic_006.jpg" alt="ff" onclick="location.href ='奶粉.html'">
+      <div class="carousel-caption">
+      </div>
+    </div>
+    
+    <div class="item">
+      <img src="主页/pic_007.jpg" alt="ff" onclick="location.href ='奶粉.html'">
+      <div class="carousel-caption">
+      </div>
+    </div>
+    
+    <div class="item">
+      <img src="主页/pic_008.jpg" alt="ff" onclick="location.href ='奶粉.html'">
+      <div class="carousel-caption">
+      </div>
+    </div>
+    
+  </div>
+</div>
+
+</div>
+			</header>
+			<section id="sec1">
+				<div id="fenlie1">
+					<a href="#"><img src="主页/pic_010.png" alt="ff" onclick="location.href ='奶粉.html'"/></a>
+					<a href="#"><img src="主页/pic_011.png" alt="ff" onclick="location.href ='奶粉.html'"/></a>
+					<a href="#"><img src="主页/pic_012.png" alt="ff" onclick="location.href ='奶粉.html'"/></a>
+					<a href="#"><img src="主页/pic_013.png" alt="ff" onclick="location.href ='奶粉.html'"/></a>
+					<a href="#"><img src="主页/pic_014.png" alt="ff" onclick="location.href ='奶粉.html'"/></a>
+				</div>
+				<div id="fenlie2">
+					<a href="#"><img src="主页/pic_015.png" alt="ff" onclick="location.href ='奶粉.html'"/></a>
+					<a href="#"><img src="主页/pic_016.png" alt="ff" onclick="location.href ='奶粉.html'"/></a>
+					<a href="#"><img src="主页/pic_017.png" alt="ff" onclick="location.href ='奶粉.html'"/></a>
+					<a href="#"><img src="主页/pic_018.png" alt="ff" onclick="location.href ='奶粉.html'"/></a>
+					<a href="#"><img src="主页/pic_019.png" alt="ff" onclick="location.href ='奶粉.html'"/></a>
+				</div>
+				<div id="fenlie3">
+					<img src="主页/pic_026.png" alt="ff" />
+					<div id="js1">
+			<ul id="u1">
+				<li onclick="location.href ='http://www.baidu.com'">大腿在手,天下我有</li>
+				<li>一念花开,君临天下</li>
+				<li>仙路尽头谁为峰,一见无始道成空</li>
+			</ul>
+					</div>
+				</div>
+			</section>
+			<div id="djs">
+				<img src="主页/1.png" alt="ff" onclick="location.href ='秒杀.html'"/>
+				<span id="djs1">0</span>
+				<span id="djs2">0</span>
+				<span id="djs3">0</span>
+				<div id="djs4" onclick="location.href ='秒杀.html'">更多秒杀   &gt;</div>
+			</div>
+			<div id="ms">
+				<a href="#"><img src="主页/g1.png" alt="ff" onclick="location.href ='秒杀.html'"/></a>
+				<a href="#"><img src="主页/g2.png" alt="ff" onclick="location.href ='秒杀.html'"/></a>
+				<a href="#"><img src="主页/g3.png" alt="ff" onclick="location.href ='秒杀.html'"/></a>
+			</div>
+			<img id="img2" src="主页/pic_047.jpg" onclick="location.href ='秒杀.html'"/>
+			<div id="js">
+				<img src="主页/phb.png" alt="ff" onclick="location.href ='秒杀.html'"/>
+				<img src="主页/sg.png" alt="ff" onclick="location.href ='秒杀.html'"/>
+			</div>
+			<div id="ash">
+				<img src="主页/pic_051.png" alt="ff" onclick="location.href ='奶粉.html'"/>
+				<img src="主页/pic_052.jpg" alt="ff" onclick="location.href ='奶粉.html'"/>
+			</div>
+			<div id="aaa">
+			<img src="主页/p1.png" alt="ff" /><img src="主页/p2.png" alt="ff" onclick="location.href ='奶粉.html'"/>
+			<img src="主页/p3.png" alt="ff" /><img src="主页/p4.png" alt="ff" onclick="location.href ='奶粉.html'"/>
+			<div id="bbb">
+			<img src="主页/p5.png" alt="ff" onclick="location.href ='奶粉.html'"/>
+			<img src="主页/p6.png" alt="ff" onclick="location.href ='奶粉.html'"/>
+			<img src="主页/p7.png" alt="ff" onclick="location.href ='奶粉.html'"/>
+			<img src="主页/p8.png" alt="ff" onclick="location.href ='奶粉.html'"/>
+			</div>
+			</div>
+			
+			<div id="lbt2">
+			<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+  </ol>
+  <div class="carousel-inner" role="listbox">
+  	
+    <div class="item active">
+      <img src="主页/pic_071.jpg" alt="ff" onclick="location.href ='秒杀.html'">
+      <div class="carousel-caption">
+      </div>
+    </div>
+    
+    <div class="item">
+      <img src="主页/pic_072.jpg" alt="ff" onclick="location.href ='秒杀.html'">
+      <div class="carousel-caption">
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+
+<div>
+	<img id="img3" src="主页/pic_051.png" alt="ff" /><img id="img4" src="主页/pic_064.jpg" alt="ff" />
+</div>
+<div id="hpz">
+<img src="主页/p9.png" alt="ff" /><img src="主页/p10.png" alt="ff" onclick="location.href ='奶粉.html'"/>
+<img src="主页/p11.png" alt="ff" /><img src="主页/p12.png" alt="ff" onclick="location.href ='奶粉.html'"/>
+<img src="主页/p13.png" alt="ff" /><img src="主页/p14.png" alt="ff" onclick="location.href ='奶粉.html'"/>
+</div>
+
+<div id="lbt3">
+	<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+		
+  <ol class="carousel-indicators">
+    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+  </ol>
+  
+  <div class="carousel-inner" role="listbox">
+  	
+    <div class="item active">
+      <img src="主页/pic_086.jpg" alt="ff" onclick="location.href ='奶粉.html'">
+      <div class="carousel-caption">
+      </div>
+    </div>
+    
+    <div class="item">
+      <img src="主页/pic_087.jpg" alt="ff" onclick="location.href ='奶粉.html'">
+      <div class="carousel-caption">
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+	<div id="ash">
+		<img src="主页/pic_051.png" alt="ff" onclick="location.href ='奶粉.html'"/>
+		<img src="主页/pic_073.jpg" alt="ff" onclick="location.href ='奶粉.html'"/>
+	</div>
+
+    <div id="gts">
+    	<img class="da" src="主页/p15.png" alt="ff" onclick="location.href ='奶粉.html'"/><img class="xiao" src="主页/p16.png" alt="ff" onclick="location.href ='奶粉.html'"/><img class="xiao" src="主页/p17.png" alt="ff" onclick="location.href ='奶粉.html'"/>
+    	<img class="da" src="主页/p18.png" alt="ff" onclick="location.href ='奶粉.html'"/><img class="xiao" src="主页/p19.png" alt="ff" onclick="location.href ='奶粉.html'"/><img class="xiao" src="主页/p20.png" alt="ff" onclick="location.href ='奶粉.html'"/>
+    	<img class="ee" src="主页/p21.png" alt="ff" onclick="location.href ='奶粉.html'"/><img class="ee" src="主页/p22.png" alt="ff" onclick="location.href ='奶粉.html'"/><img class="ee" src="主页/p23.png" alt="ff" onclick="location.href ='奶粉.html'"/><img class="ee" src="主页/p24.png" alt="ff" onclick="location.href ='奶粉.html'"/>
+    </div>
+    
+    <div id="lbt2">
+			<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+  </ol>
+  <div class="carousel-inner" role="listbox">
+  	
+    <div class="item active">
+      <img src="主页/pic_101.jpg" alt="ff" onclick="location.href ='奶粉.html'">
+      <div class="carousel-caption">
+      </div>
+    </div>
+    
+    <div class="item">
+      <img src="主页/pic_072.jpg" alt="ff" onclick="location.href ='奶粉.html'">
+      <div class="carousel-caption">
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<!--<img src="" alt="ff" /><img src="" alt="ff" />-->
+
+    <div id="ash">
+		<img src="主页/pic_051.png" alt="ff" onclick="location.href ='奶粉.html'"/>
+		<img src="主页/pic_088.jpg" alt="ff" onclick="location.href ='奶粉.html'"/>
+	</div>
+    
+    <div id="gsc">
+    	<img class="da" src="主页/p25.png" alt="ff" onclick="location.href ='奶粉.html'"/><img class="da" src="主页/p26.png" alt="ff" onclick="location.href ='奶粉.html'"/>
+    	<img class="da" src="主页/p27.png" alt="ff" onclick="location.href ='奶粉.html'"/><img class="da" src="主页/p28.png" alt="ff" onclick="location.href ='奶粉.html'"/>
+    	<img class="ee" src="主页/p29.png" alt="ff" onclick="location.href ='奶粉.html'"/><img class="ee" src="主页/p30.png" alt="ff" onclick="location.href ='奶粉.html'"/><img class="ee" src="主页/p31.png" alt="ff" onclick="location.href ='奶粉.html'"/><img class="ee" src="主页/p32.png" alt="ff" onclick="location.href ='奶粉.html'"/>
+    	<img class="ee" src="主页/p33.png" alt="ff" onclick="location.href ='奶粉.html'"/><img class="ee" src="主页/p34.png" alt="ff" onclick="location.href ='奶粉.html'"/><img class="ee" src="主页/p35.png" alt="ff" onclick="location.href ='奶粉.html'"/><img class="ee" src="主页/p36.png" alt="ff" onclick="location.href ='奶粉.html'"/>
+    </div>
+       <img class="zh" src="主页/pic_023.jpg" alt="ff" onclick="location.href ='奶粉.html'"/>
+       <img class="zh" src="主页/hd.png" alt="ff" onclick="location.href ='奶粉.html'"/>
+       <img class="da" src="主页/p37.png" alt="ff" onclick="location.href ='奶粉.html'"/><img class="da" src="主页/p38.png" alt="ff" onclick="location.href ='奶粉.html'"/>
+       <img class="zh" src="主页/p39.png" alt="ff" onclick="location.href ='奶粉.html'"/>
+       
+       <img class="da" src="主页/p40.png" alt="ff" onclick="location.href ='奶粉.html'"/><img class="da" src="主页/p41.png" alt="ff" onclick="location.href ='奶粉.html'"/>
+	   <img class="da" src="主页/p42.png" alt="ff" onclick="location.href ='奶粉.html'"/><img class="da" src="主页/p43.png" alt="ff" onclick="location.href ='奶粉.html'"/>
+	   <img class="da" src="主页/p44.png" alt="ff" onclick="location.href ='奶粉.html'"/><img class="da" src="主页/p45.png" alt="ff" onclick="location.href ='奶粉.html'"/>
+		</main>
+		<div id="ff">
+			<ul id="u2">
+				<li>登录</li>
+				<li>注册</li>
+				<li>反馈</li>
+				<li><a id="a1" href="#1">回到顶部</a></li>
+			</ul>
+		</div>
+		<footer id="foot">
+		<img src="主页/pic_107.png" alt="ff" onclick="location.href ='主页.html'"/>
+		<img src="主页/pic_108.png" alt="ff" onclick="location.href ='分类.html'"/>
+		<img src="主页/pic_109.png" alt="ff" onclick="location.href ='购物车.html'"/>
+		<img src="主页/pic_110.png" alt="ff" onclick="location.href ='未登录页面.html'"/>
+		</footer>
+	</body>
+</html>
+<script type="text/javascript">
+	// ----------------------------字体
+    (function (doc, win) {
+        var docEl = doc.documentElement,
+                resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                recalc = function () {
+                    var clientWidth = docEl.clientWidth;
+                    if (!clientWidth) return;
+                    docEl.style.fontSize = 20 * (clientWidth / 320) + 'px';
+                };
+
+        if (!doc.addEventListener) return;
+        win.addEventListener(resizeEvt, recalc, false);
+        doc.addEventListener('DOMContentLoaded', recalc, false);
+    })(document, window);
+
+</script>

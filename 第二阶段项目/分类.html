@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>分类</title>
+		<meta http-equiv="x-ua-compatible" content="IE=edge">
+    	<meta name="viewport" content="width=device-width,initial-scale=1">
+    	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    	<script src="bootstrap/js/jquery.js"></script>
+    	<script src="bootstrap/js/bootstrap.min.js"></script>
+    	<script src="js/yc.js"></script>
+    	<script src="jquery-3.0.0.js"></script>
+
+    	<style type="text/css">
+    		header{
+				font-size: 4.33vw;
+				padding-top: 4.16vw;
+				height: 12.22vw;
+    			width: 100%;
+    			background-color: #F7F7F7;
+    			display: flex;
+    			justify-content: space-between;
+    		}
+			header img{
+				width: 10vw;
+				height: 100%;
+				margin-top: -1vw;
+			}
+    		#inp1{
+    			height: 8vw;
+    			width: 70vw;
+    			margin-top: -2vw;
+    		}
+    		.ss1{
+    			text-align: center;
+    			display: flex;
+    			justify-content: space-around;
+    		}
+    		.ss1 div{
+    			margin-top: 3vw;
+    			border-radius: 10px;
+    			width: 27vw;
+    			height: 6vw;
+    			border: 0.125vw solid black;
+    		}
+    		main{
+    			display: none;
+    		}
+    		#nav{
+    			display: none;
+    			
+    		}
+    		#yc{
+    			margin-top: 1vw;
+    			background-color: #404042;
+    			display: flex;
+    			height: 16.44vw;
+    			justify-content: space-around;
+    		}
+    		#yc img{
+    			height: 15.44vw;
+    			margin-top: 1vw;
+    		}
+    		
+    		#pang{
+    			/*border: 0.126vw solid red;*/
+    			width: 25vw;
+    		}
+    		#pang ul,li{
+    			margin: 0;
+    			padding: 0;
+    			list-style: none;
+    		}
+    		#pang li{
+    			border: 0.126vw solid #e5e5e5;
+    			height: 12vw;
+    			text-align: center;
+    		    padding-top: 3vw;
+    		    font-size: 3.33vw;
+    		}
+    		#d1{
+    			display: flex;
+    			flex-wrap: nowrap;
+    			 flex-direction:column;
+    			background-color: #f3f5f7;
+    			height: 250vw;
+    			 
+    		}
+    		.head1 img{
+    			margin: 2vw 2vw 2vw 2vw;
+    			width: 95%;
+    			
+    		}
+    		#body1{
+    			display: flex;
+    			justify-content: space-around;
+    			margin: 2vw 2vw 2vw 2vw;
+    			background: white;
+    		}
+    		#body1 img{
+    			width: 18%;
+    			
+    		}
+    		.span1{
+    			margin-left: 3vw;
+    			font-size: 3.33vw;
+    		}
+    		.foot1{
+    			background-color: white;
+    			margin: 2vw 4vw 2vw 2vw;
+    			/*display: flex;
+    			flex-wrap: nowrap*/
+    		}
+    		.quan img{
+    			width: 10%;
+    			height: 20vw;
+    			margin-top: 5vw;
+    		}
+    		.quan{
+    			display: flex;
+    			justify-content: space-around;
+    		}
+    		.wei img{
+    			width: 20%;
+    			height: 20vw;
+    			margin-left: 5vw;
+    			
+    		}
+    		.zhong {
+                display: none;
+                width: 73%;
+                position:relative;
+                left: 25vw;
+                top: -250vw;
+            }
+             
+    	</style>
+	</head>
+	<body>
+		<header>
+				<img src="分类/1.png" alt="ff" id="img1" onclick="location.href ='主页.html'"/>
+				<input type="text" name="" id="inp1" placeholder="不买难受,买不到想哭" onclick="location.href ='搜索.html'"/>
+				<img src="分类/2.png" alt="ff" id="img2"/>
+		</header>
+			<nav id="nav">
+				<div id="yc">
+				<img src="分类/4.png" alt="ff" onclick="location.href ='主页.html'"/>
+				<img src="分类/5.png" alt="ff" onclick="location.href ='分类.html'"/>
+				<img src="分类/6.png" alt="ff" onclick="location.href ='购物车.html'"/>
+				<img src="分类/7.png" alt="ff" onclick="location.href ='登录.html'"/>
+				</div>
+			</nav>
+		<!--<main id='main'>
+			<section>
+				<span>热门搜索</span>
+				<div class="ss1">
+					<div class="">儿童女装</div>
+					<div>鱼子酱</div>
+					<div>机器人</div>
+				</div>
+				<div class="ss1">
+					<div>时尚手机</div>
+					<div>男装</div>
+					<div>鞋子</div>
+				</div>
+			</section>
+		</main>-->
+		
+		<div id="d1">
+			<div id="pang">
+				<ul>
+					<li class="c1">热门推荐</li>
+					<li class="c1">潮流女装</li>
+					<li class="c1">品牌男装</li>
+					<li class="c1">个护化妆</li>
+					<li class="c1">家用电器</li>
+					<li class="c1">电脑办公</li>
+					<li class="c1">手机数码</li>
+					<li class="c1">母婴童装</li>
+				</ul>
+			</div>
+        </div>
+
+        <action>
+			<div class="zhong">
+				<div class="head1">
+					<img src="分类/pic_001.jpg" onclick="location.href ='奶粉.html'"/>
+				</div>
+				<span class="span1">专场推荐</span>
+				<div id="body1">
+					<img src="分类/8.png" alt="ff" onclick="location.href ='奶粉.html'"/>
+					<img src="分类/9.png" alt="ff" onclick="location.href ='奶粉.html'"/>
+					<img src="分类/10.png" alt="ff" onclick="location.href ='奶粉.html'"/>
+				</div>
+				
+				<div class="foot1">
+					
+					<div class="quan">
+						<img  src="分类/pic_005.png" alt="ff" onclick="location.href ='奶粉.html'"/><img  src="分类/pic_006.jpg" alt="ff" onclick="location.href ='奶粉.html'"/><img  src="分类/pic_007.jpg" alt="ff" onclick="location.href ='奶粉.html'"/>
+					</div>
+					
+					<div class="quan" >
+						<img  src="分类/pic_008.jpg" alt="ff" onclick="location.href ='奶粉.html'"/><img  src="分类/pic_009.jpg" alt="ff" onclick="location.href ='奶粉.html'"/><img  src="分类/pic_010.jpg" alt="ff" onclick="location.href ='奶粉.html'"/>
+					</div>
+					
+					<div class="wei">
+					<img  src="分类/pic_011.jpg" alt="ff" onclick="location.href ='奶粉.html'"/>
+					</div>
+
+				</div>
+				
+			</div>
+		
+			
+		<!---->
+			
+				<div class="zhong">
+				
+				<div class="head1">
+					<img src="分类/19.png" alt="ff" onclick="location.href ='奶粉.html'"/>
+				</div>
+				
+				<span class="span1">热门活动</span>
+				<div class="foot1">
+					<div class="quan">
+						<img  src="分类/20.png" alt="ff" onclick="location.href ='奶粉.html'"/><img  src="分类/21.png" alt="ff" onclick="location.href ='奶粉.html'"/><img  src="分类/22.png" alt="ff" onclick="location.href ='奶粉.html'"/>
+					</div>
+					
+					<div class="quan" >
+						<img  src="分类/23.png" alt="ff" onclick="location.href ='奶粉.html'"/><img  src="分类/24.png" alt="ff" onclick="location.href ='奶粉.html'"/><img  src="分类/25.png" alt="ff" onclick="location.href ='奶粉.html'"/>
+					</div>
+					<div class="quan" >
+						<img  src="分类/26.png" alt="ff" onclick="location.href ='奶粉.html'"/><img  src="分类/27.png" alt="ff" onclick="location.href ='奶粉.html'"/><img  src="分类/28.png" alt="ff" onclick="location.href ='奶粉.html'"/>
+					</div>
+				</div>
+				
+				<span class="span1">热卖品类</span>
+				
+				<div class="foot1">
+					<div class="quan">
+						<img  src="分类/29.png" alt="ff" onclick="location.href ='奶粉.html'"/><img  src="分类/30.png" alt="ff" onclick="location.href ='奶粉.html'"/><img  src="分类/31.png" alt="ff" onclick="location.href ='奶粉.html'"/>
+					</div>
+					
+					<div class="quan" >
+						<img  src="分类/32.png" alt="ff" onclick="location.href ='奶粉.html'"/><img  src="分类/33.png" alt="ff" onclick="location.href ='奶粉.html'"/><img  src="分类/34.png" alt="ff" onclick="location.href ='奶粉.html'"/>
+					</div>
+					<div class="quan" >
+						<img  src="分类/35.png" alt="ff" onclick="location.href ='奶粉.html'"/><img  src="分类/36.png" alt="ff" onclick="location.href ='奶粉.html'"/><img  src="分类/37.png" alt="ff" onclick="location.href ='奶粉.html'"/>
+					</div>
+				</div>
+				
+				<span class="span1">热卖品类</span>
+				
+				<div class="foot1">
+					<div class="quan">
+						<img  src="分类/29.png" alt="ff" onclick="location.href ='奶粉.html'"/><img  src="分类/30.png" alt="ff" onclick="location.href ='奶粉.html'"/><img  src="分类/31.png" alt="ff" onclick="location.href ='奶粉.html'"/>
+					</div>
+					
+					<div class="quan" >
+						<img  src="分类/32.png" alt="ff" onclick="location.href ='奶粉.html'"/><img  src="分类/33.png" alt="ff" onclick="location.href ='奶粉.html'"/><img  src="分类/34.png" alt="ff" onclick="location.href ='奶粉.html'"/>
+					</div>
+					<div class="quan" >
+						<img  src="分类/35.png" alt="ff" onclick="location.href ='奶粉.html'"/><img  src="分类/36.png" alt="ff" onclick="location.href ='奶粉.html'"/><img  src="分类/37.png" alt="ff" onclick="location.href ='奶粉.html'"/>
+					</div>
+				</div>
+				</div>
+		
+		
+			
+			<!---->
+			
+				<div class="zhong">
+				<div class="head1">
+					<img src="分类/47.png" alt="ff" onclick="location.href ='奶粉.html'"/>
+				</div>
+				<span class="span1">热卖选购</span>
+				
+				<div class="foot1">
+					<div class="quan">
+						<img  src="分类/48.png" alt="ff" onclick="location.href ='奶粉.html'"/><img  src="分类/49.png" alt="ff" onclick="location.href ='奶粉.html'"/><img  src="分类/50.png" alt="ff" onclick="location.href ='奶粉.html'"/>
+					</div>
+					
+					<div class="quan" >
+						<img  src="分类/51.png" alt="ff" onclick="location.href ='奶粉.html'"/><img  src="分类/52.png" alt="ff" onclick="location.href ='奶粉.html'"/><img  src="分类/53.png" alt="ff" onclick="location.href ='奶粉.html'"/>
+					</div>
+					<div class="quan" >
+						<img  src="分类/54.png" alt="ff" onclick="location.href ='奶粉.html'"/><img  src="分类/55.png" alt="ff" onclick="location.href ='奶粉.html'"/><img  src="分类/56.png" alt="ff" onclick="location.href ='奶粉.html'"/>
+					</div>
+				</div>
+				
+				<span class="span1">专场推荐</span>
+				
+				<div class="foot1">
+					<div class="quan">
+						<img  src="分类/57.png" alt="ff" onclick="location.href ='奶粉.html'"/><img  src="分类/58.png" alt="ff" onclick="location.href ='奶粉.html'"/><img  src="分类/59.png" alt="ff" onclick="location.href ='奶粉.html'"/>
+					</div>
+					
+					</div>
+				<span class="span1">夹克</span>
+					
+					<div class="foot1">
+					<div class="quan" >
+						<img  src="分类/60.png" alt="ff" onclick="location.href ='奶粉.html'"/><img  src="分类/61.png" alt="ff" onclick="location.href ='奶粉.html'"/><img  src="分类/62.png" alt="ff" onclick="location.href ='奶粉.html'"/>
+					</div>
+					<div class="quan" >
+						<img  src="分类/63.png" alt="ff" onclick="location.href ='奶粉.html'"/><img  src="分类/64.png" alt="ff" onclick="location.href ='奶粉.html'"/><img  src="分类/65.png" alt="ff" onclick="location.href ='奶粉.html'"/>
+					</div>
+					<div class="quan">
+						<img  src="分类/66.png" alt="ff" onclick="location.href ='奶粉.html'"/><img  src="分类/67.png" alt="ff" onclick="location.href ='奶粉.html'"/><img  src="分类/68.png" alt="ff" onclick="location.href ='奶粉.html'"/>
+					</div>
+				</div>
+			</div>
+			
+				<!---->
+				
+					<div class="zhong">
+				<div class="head1">
+					<img src="分类/69.png" alt="ff" onclick="location.href ='奶粉.html'"/>
+					
+				</div>
+				<span class="span1">面部护肤</span>
+				
+				<div class="foot1">
+					<div class="quan" >
+						<img  src="分类/70.png" alt="ff" onclick="location.href ='奶粉.html'"/><img  src="分类/71.png" alt="ff" onclick="location.href ='奶粉.html'"/><img  src="分类/72.png" alt="ff" onclick="location.href ='奶粉.html'"/>
+					</div>
+					<div class="quan" >
+						<img  src="分类/73.png" alt="ff" onclick="location.href ='奶粉.html'"/><img  src="分类/74.png" alt="ff" onclick="location.href ='奶粉.html'"/><img  src="分类/75.png" alt="ff" onclick="location.href ='奶粉.html'"/>
+					</div>
+					<div class="quan">
+						<img  src="分类/76.png" alt="ff" onclick="location.href ='奶粉.html'"/><img  src="分类/77.png" alt="ff" onclick="location.href ='奶粉.html'"/><img  src="分类/78.png" alt="ff" onclick="location.href ='奶粉.html'"/>
+					</div>
+				</div>
+				
+				<span class="span1">身体护理</span>
+				
+				<div class="foot1">
+					<div class="quan" >
+						<img  src="分类/70.png" alt="ff" onclick="location.href ='奶粉.html'"/><img  src="分类/71.png" alt="ff" onclick="location.href ='奶粉.html'"/><img  src="分类/72.png" alt="ff" onclick="location.href ='奶粉.html'"/>
+					</div>
+					<div class="quan" >
+						<img  src="分类/73.png" alt="ff" onclick="location.href ='奶粉.html'"/><img  src="分类/74.png" alt="ff" onclick="location.href ='奶粉.html'"/><img  src="分类/75.png" alt="ff" onclick="location.href ='奶粉.html'"/>
+					</div>
+					<div class="quan">
+						<img  src="分类/76.png" alt="ff" onclick="location.href ='奶粉.html'"/><img  src="分类/77.png" alt="ff" onclick="location.href ='奶粉.html'"/><img  src="分类/78.png" alt="ff" onclick="location.href ='奶粉.html'"/>
+					</div>
+				</div>
+				
+			</div>
+	
+			
+			
+			<!---->
+			
+				<div class="zhong">
+				<div class="head1">
+					<img src="分类/80.png" alt="ff" onclick="location.href ='奶粉.html'"/>
+					
+				</div>
+				<span class="span1">推荐品牌</span>
+				
+				<div class="foot1">
+					<div class="quan" >
+						<img  src="分类/70.png" alt="ff" onclick="location.href ='奶粉.html'"/><img  src="分类/71.png" alt="ff" onclick="location.href ='奶粉.html'"/><img  src="分类/72.png" alt="ff" onclick="location.href ='奶粉.html'"/>
+					</div>
+					<div class="quan" >
+						<img  src="分类/73.png" alt="ff" onclick="location.href ='奶粉.html'"/><img  src="分类/74.png" alt="ff" onclick="location.href ='奶粉.html'"/><img  src="分类/75.png" alt="ff" onclick="location.href ='奶粉.html'"/>
+					</div>
+					<div class="quan">
+						<img  src="分类/76.png" alt="ff" onclick="location.href ='奶粉.html'"/><img  src="分类/77.png" alt="ff" onclick="location.href ='奶粉.html'"/><img  src="分类/78.png" alt="ff" onclick="location.href ='奶粉.html'"/>
+					</div>
+				</div>
+				
+				<span class="span1">电视</span>
+				
+				<div class="foot1">
+					<div class="quan" >
+						<img  src="分类/70.png" alt="ff" onclick="location.href ='奶粉.html'"/><img  src="分类/71.png" alt="ff" onclick="location.href ='奶粉.html'"/><img  src="分类/72.png" alt="ff" onclick="location.href ='奶粉.html'"/>
+					</div>
+					<div class="quan" >
+						<img  src="分类/73.png" alt="ff" onclick="location.href ='奶粉.html'"/><img  src="分类/74.png" alt="ff" onclick="location.href ='奶粉.html'"/><img  src="分类/75.png" alt="ff" onclick="location.href ='奶粉.html'"/>
+					</div>
+					<div class="quan">
+						<img  src="分类/76.png" alt="ff" onclick="location.href ='奶粉.html'"/><img  src="分类/77.png" alt="ff" onclick="location.href ='奶粉.html'"/><img  src="分类/78.png" alt="ff" onclick="location.href ='奶粉.html'"/>
+					</div>
+				</div>
+				
+			</div>
+			
+			
+			<!---->
+			
+				<div class="zhong">
+				<div class="head1">
+					<img src="分类/81.png" alt="ff" onclick="location.href ='奶粉.html'"/>
+					
+				</div>
+				<span class="span1">电脑整机</span>
+				
+				<div class="foot1">
+					<div class="quan" >
+						<img  src="分类/70.png" alt="ff" onclick="location.href ='奶粉.html'"/><img  src="分类/71.png" alt="ff" onclick="location.href ='奶粉.html'"/><img  src="分类/72.png" alt="ff" onclick="location.href ='奶粉.html'"/>
+					</div>
+					<div class="quan" >
+						<img  src="分类/73.png" alt="ff" onclick="location.href ='奶粉.html'"/><img  src="分类/74.png" alt="ff" onclick="location.href ='奶粉.html'"/><img  src="分类/75.png" alt="ff" onclick="location.href ='奶粉.html'"/>
+					</div>
+					<div class="quan">
+						<img  src="分类/76.png" alt="ff" onclick="location.href ='奶粉.html'"/><img  src="分类/77.png" alt="ff" onclick="location.href ='奶粉.html'"/><img  src="分类/78.png" alt="ff" onclick="location.href ='奶粉.html'"/>
+					</div>
+				</div>
+				
+				<span class="span1">电脑配件</span>
+				
+				<div class="foot1">
+					<div class="quan" >
+						<img  src="分类/70.png" alt="ff" onclick="location.href ='奶粉.html'"/><img  src="分类/71.png" alt="ff" onclick="location.href ='奶粉.html'"/><img  src="分类/72.png" alt="ff" onclick="location.href ='奶粉.html'"/>
+					</div>
+					<div class="quan" >
+						<img  src="分类/73.png" alt="ff" onclick="location.href ='奶粉.html'"/><img  src="分类/74.png" alt="ff" onclick="location.href ='奶粉.html'"/><img  src="分类/75.png" alt="ff" onclick="location.href ='奶粉.html'"/>
+					</div>
+					<div class="quan">
+						<img  src="分类/76.png" alt="ff" onclick="location.href ='奶粉.html'"/><img  src="分类/77.png" alt="ff" onclick="location.href ='奶粉.html'"><img  src="分类/78.png" alt="ff" onclick="location.href ='奶粉.html'"/>
+					</div>
+				</div>
+				
+			</div>
+			
+			
+			<!---->
+			
+			<div class="zhong">
+				<div class="head1">
+					<img src="分类/82.png" alt="ff" onclick="location.href ='奶粉.html'"/>
+					
+				</div>
+				<span class="span1">热门品牌</span>
+				
+				<div class="foot1">
+					<div class="quan" >
+						<img  src="分类/70.png" alt="ff" onclick="location.href ='奶粉.html'"/><img  src="分类/71.png" alt="ff" onclick="location.href ='奶粉.html'"/><img  src="分类/72.png" alt="ff" onclick="location.href ='奶粉.html'"/>
+					</div>
+					<div class="quan" >
+						<img  src="分类/73.png" alt="ff" onclick="location.href ='奶粉.html'"/><img  src="分类/74.png" alt="ff" onclick="location.href ='奶粉.html'"/><img  src="分类/75.png" alt="ff" onclick="location.href ='奶粉.html'"/>
+					</div>
+					<div class="quan">
+						<img  src="分类/76.png" alt="ff" onclick="location.href ='奶粉.html'"/><img  src="分类/77.png" alt="ff" onclick="location.href ='奶粉.html'"/><img  src="分类/78.png" alt="ff" onclick="location.href ='奶粉.html'"/>
+					</div>
+				</div>
+				
+				<span class="span1">手机通讯</span>
+				
+				<div class="foot1">
+					<div class="quan" >
+						<img  src="分类/70.png" alt="ff" onclick="location.href ='奶粉.html'"/><img  src="分类/71.png" alt="ff" onclick="location.href ='奶粉.html'"/><img  src="分类/72.png" alt="ff" onclick="location.href ='奶粉.html'"/>
+					</div>
+					<div class="quan" >
+						<img  src="分类/73.png" alt="ff" onclick="location.href ='奶粉.html'"/><img  src="分类/74.png" alt="ff" onclick="location.href ='奶粉.html'"><img  src="分类/75.png" alt="ff" onclick="location.href ='奶粉.html'"/>
+					</div>
+					<div class="quan">
+						<img  src="分类/76.png" alt="ff" onclick="location.href ='奶粉.html'"/><img  src="分类/77.png" alt="ff" onclick="location.href ='奶粉.html'"/><img  src="分类/78.png" alt="ff" onclick="location.href ='奶粉.html'"/>
+					</div>
+				</div>
+		</div>
+		
+			
+			
+			<!---->
+			
+				<div class="zhong">
+				<div class="head1">
+					<img src="分类/82.png" alt="ff" onclick="location.href ='奶粉.html'"/>
+					
+				</div>
+				<span class="span1">奶粉</span>
+				
+				<div class="foot1">
+					<div class="quan" >
+						<img  src="分类/70.png" alt="ff" onclick="location.href ='奶粉.html'"/><img  src="分类/71.png" alt="ff" onclick="location.href ='奶粉.html'"/><img  src="分类/72.png" alt="ff" onclick="location.href ='奶粉.html'"/>
+					</div>
+					<div class="quan" >
+						<img  src="分类/73.png" alt="ff" onclick="location.href ='奶粉.html'"/><img  src="分类/74.png" alt="ff" onclick="location.href ='奶粉.html'"/><img  src="分类/75.png" alt="ff" onclick="location.href ='奶粉.html'"/>
+					</div>
+					<div class="quan">
+						<img  src="分类/76.png" alt="ff" onclick="location.href ='奶粉.html'"/><img  src="分类/77.png" alt="ff" onclick="location.href ='奶粉.html'"/><img  src="分类/78.png" alt="ff" onclick="location.href ='奶粉.html'"/>
+					</div>
+				</div>
+				
+				<span class="span1">营养铺食</span>
+				
+				<div class="foot1">
+					<div class="quan" >
+						<img  src="分类/70.png" alt="ff" onclick="location.href ='奶粉.html'"/><img  src="分类/71.png" alt="ff" onclick="location.href ='奶粉.html'"/><img  src="分类/72.png" alt="ff" onclick="location.href ='奶粉.html'"/>
+					</div>
+					<div class="quan" >
+						<img  src="分类/73.png" alt="ff" onclick="location.href ='奶粉.html'"/><img  src="分类/74.png" alt="ff" onclick="location.href ='奶粉.html'"/><img  src="分类/75.png" alt="ff" onclick="location.href ='奶粉.html'"/>
+					</div>
+					<div class="quan">
+						<img  src="分类/76.png" alt="ff" onclick="location.href ='奶粉.html'"/><img  src="分类/77.png" alt="ff" onclick="location.href ='奶粉.html'"/><img  src="分类/78.png" alt="ff" onclick="location.href ='奶粉.html'"/>
+					</div>
+				</div>
+			
+			</div>
+			</div>
+        </action>
+			<!---->
+		
+	</body>
+</html>
+<script type="text/javascript">
+    $('.c1').each(function(){
+        $(this).click(function() {
+            $('.zhong').eq($(this).index()).css('display','block');
+            $('.zhong').eq($(this).index()).siblings().css('display','none');
+
+        })
+    });
+
+
+
+//	var s = document.querySelectorAll('.c1');
+//	var c=document.querySelectorAll('.zhong');
+//	for(var i=0;i< s.length;i++){
+//		s[i].index = i;
+//		s[i].onclick=function(){
+////			console.log(c[this.index])
+//			c[this.index].style.display = 'none';
+//		}
+//	}
+
+
+
+
+//     		$(this).click(function(){
+//     			$('.zhong').eq($(this).index()).stop(true).attr('class','you').siblings().stop(true);
+////				$('.zhong').eq($(this).index()).toggleClass('kai');
+////				$('.zhong').eq($(this).index()).siblings().hide();
+////     		
+//     	});
+//     	
+       
+//     $('#zuoce>div').each(function(){
+//		$(this).click(function(){
+//			$(this).css('color','red');
+//			$(this).siblings().css('color','black');	
+//			$('section>#youce>div').eq($(this).index()).css('display','block');
+//			$('section>#youce>div').eq($(this).index()).siblings().css('display','none');
+//			})
+//	});
+
+//$(function(){
+//	$('.k').each(function(index){
+//		alert(index);
+//	})
+//})
+</script>

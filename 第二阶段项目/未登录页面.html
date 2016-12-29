@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>未登录页面</title>
+    <meta http-equiv="x-ua-compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <script src="bootstrap/js/jquery.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="jquery-3.0.0.js"></script>
+    <style>
+        html,body{
+            padding: 0;
+            margin: 0;
+
+        }
+        body{
+            background-color: #f0f2f5;
+        }
+        header{
+            font-size: 4.33vw;
+            padding-top: 4.16vw;
+            height: 12.22vw;
+            width: 100%;
+            background-color: #F7F7F7;
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 0.126vw solid #bbbbbb;
+        }
+        header img{
+            width: 10vw;
+            height: 100%;
+            margin-top: -1vw;
+        }
+        .input{
+            width: 91.66vw;
+            height: 11.94vw;
+            margin: 6.66vw 0vw 0vw 3.88vw;
+
+        }
+        #inp1{
+        	font-size: 3.33vw;
+        }
+        #inp2{
+        	font-size: 3.33vw;
+        	
+        }
+        #inp3{
+        	font-size: 3.33vw;
+        	
+        }
+        #shi{
+            position: relative;
+        }
+        #qiehuan{
+            border-radius: 20vw;
+            position: absolute;
+            right: 6.37vw;
+            bottom: 0.4vw;
+            height: 8.88vw;
+            width: 14.44vw;
+            border: 0.126vw solid #bbbbbb;
+            font-size: 4vw;
+        }
+        #qiehuan span:nth-child(3){
+            padding-left: 1.5vw;
+            
+        }
+        #qiu{
+            position: absolute;
+            height: 8.68vw;
+            width: 8.88vw;
+            background-color: white;
+            border-radius: 100%;
+        }
+        .aaaa{
+            position: absolute;
+            left: 5vw;
+        }
+        #xiang{
+            height: 8.68vw;
+            width: 6.88vw;
+            border-top-left-radius: 10vw;
+            border-bottom-left-radius: 10vw;
+            display: inline-block;
+        }
+        #yzh{
+            position: absolute;
+            right: 5vw;
+            top: 58.5vw;
+           height: 6.38vw;
+            width: 20.83vw;
+            padding-left: 2vw;
+            border-left: 0.126vw solid #bbbbbb;
+        }
+        #button{
+            margin: 13.05vw auto;
+            background-color: #eeeeee;
+            height: 12.5vw;
+            width: 91.66vw;
+            text-align: center;
+            padding-top: 4.16vw;
+            font-size: 5vw;
+        }
+        .yg{
+            border: 0.126vw solid #8d8e91;
+            /*background-color: red;*/
+            height: 5vw;
+            width: 5vw;
+            display: inline-block;
+            border-radius: 50%;
+            position: relative;
+            left: 4vw;
+            top: 0vw;
+        }
+#yue{
+    padding-left: 6vw;
+    font-size: 4vw;
+}
+        #xuan{
+            margin-top: -5vw;
+        }
+        #ze{
+            margin: 7.22vw 0vw 0vw 5vw;
+        }
+        #d1{
+            padding-left: 40.77vw;
+            
+        }
+        #tuijian{
+            margin-top: 5vw;
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 5vw;
+        }
+        #tuijian span{
+            position: relative;
+            top:2vw;
+            right: 0vw;
+        }
+        #tuijian div {
+            margin-top: 5vw;
+            height: 0.126vw;
+            width: 30vw;
+            border-top: 0.126vw solid black;
+        }
+        #di{
+            margin-left: 42.11vw;
+            height: 15vw;
+        	width: 15vw;
+        }
+        .img1{
+        	height: 6vw;
+        	width: 8wv;
+        }
+        .img2{
+        	height: 5vw;
+        	width: 5vw;
+        }
+        .s1{
+        	font-size: 4.33vw;
+        }
+    </style>
+</head>
+<body>
+<header id="1">
+    <img src="分类/1.png" alt="ff" onclick="location.href ='主页.html'"/>
+    <span>我的京东</span>
+    <img src="" alt="" id="aa"/>
+</header>
+
+<section>
+    <input type="text" id="inp1" class="input" placeholder="用户名/邮箱/已验证手机">
+    <div id="shi">
+        <input type="password" id="inp2" class="input" placeholder="请输入密码">
+        <div id="qiehuan">
+            <span id="qiu"></span>
+            <span id="xiang">abc</span>
+            <span id="mi">...</span>
+        </div>
+    </div>
+
+
+    <input type="text" id="inp3" class="input" placeholder="请输入验证码">
+    <div id="yzh">
+        <img class="img1" src="购物车/7.png" alt="ff">
+    </div>
+    <div id="button" onclick="location.href ='登录.html'">登录</div>
+</section>
+
+<action>
+    <div id="xuan">
+        <div class="yg"></div><span id="yue">一个月内免费登录</span>
+    </div>
+    <div id="ze">
+        <img class="img2" src="购物车/8.png" alt="ff"><span class="s1">找回密码</span> <img id="d1" src="购物车/8.png" alt="ff"><span class="s1">快速注册</span>
+    </div>
+</action>
+
+<div id="tuijian">
+    <div></div>
+    <span class="s1">其他登录方式</span>
+    <div></div>
+</div>
+
+<img id="di" src="购物车/10.png" alt="ff">
+
+</body>
+</html>
+<script>
+    $(function(){
+        $('#mi').click(function(){
+            $('#qiu').toggleClass('aaaa');
+            $('#inp2').attr('type','password');
+            $('#xiang').css('background-color','red').css('color','white');
+        });
+        $('#xiang').click(function(){
+            $('#qiu').toggleClass('aaaa');
+            $('#inp2').attr('type','text');
+            $('#xiang').css('background-color','white').css('color','black');
+
+        });
+
+    })
+</script>
